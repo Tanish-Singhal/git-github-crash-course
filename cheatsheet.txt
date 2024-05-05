@@ -8,3 +8,7 @@ git status                        => show the modified file which are yet to com
 git commit -m "commit message"    => ommit the stagging file
 git log --oneline                 => to show all the commit history
 git show <commit_id>              => it will show all the changes on that commit
+
+// Reverting the code
+git reset --hard <commit_id>      => this will fully revert the code to the previous commit
+git revert <commit_id>            => it will revert back the code
