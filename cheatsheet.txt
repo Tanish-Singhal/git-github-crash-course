@@ -1,0 +1,10 @@
+TODO: Git and Github
+git init                          => to initialize all the file and folder
+git add <file_path>               => this will throw the selected file to the stagging area
+git add .                         => to tracks the changes in all the files and folder
+git rm <file_path>                => to remove a file from tracking
+git blame <file_path>             => it will show each code line was added by which person
+git status                        => show the modified file which are yet to commit
+git commit -m "commit message"    => ommit the stagging file
+git log --oneline                 => to show all the commit history
+git show <commit_id>              => it will show all the changes on that commit
