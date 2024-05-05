@@ -12,3 +12,9 @@ git show <commit_id>              => it will show all the changes on that commit
 // Reverting the code
 git reset --hard <commit_id>      => this will fully revert the code to the previous commit
 git revert <commit_id>            => it will revert back the code
+
+// pushing the code
+git remote add origin <URL>       => it will push the entire code to this URL
+git remote -v                     => verify the origin
+git branch -M main
+git push -u origin main
