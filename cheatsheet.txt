@@ -18,3 +18,33 @@ git remote add origin <URL>       => it will push the entire code to this URL
 git remote -v                     => verify the origin
 git branch -M main
 git push -u origin main
+
+// when you do "git reset --hard <comit_id>" then to push that code, you have to do
+git push -f                       => because in local HEAD was reverted, and on server it was at original
+
+// Branching
+git branch                        => it will show all the branch
+git branch "branch name"          => making a new branch
+git push                          => run the command shows in the error, to push the commits to the branches
+git checkout "branch name"        => switching between branches
+
+// FIXME: Branching naming
+git branch "feat/add-chat-support"
+git branch "bug/login-not-working"
+wip                               => works in progress; stuff I know won't be finished soon
+junk                              => Throaway branch created to experiment
+
+// Merging (you always have to on the main branch)
+git merge origin/branch_name      => to merge the code of the branch to the main branch
+
+// Pulling
+git pull                          => pull the latest code from the server to the local machine
+
+// Rebase
+When you want to maintain the history of the branch in hte main code
+git rebase feat/feat-c            => it will add all the commits of branch feat-c in the main branch
+
+// Stash
+Temporarily stores changes, for git pull
+git stash                         => to temporarily stash the code
+git stash apply                   => apply the stashed code
